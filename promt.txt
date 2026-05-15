@@ -1,0 +1,19 @@
+#------------1--------
+(base) dikshyantdon@Dikshyants-MacBook-Air ekantipur-scraper % uv run python scraper.
+(base) dikshyantdon@Dikshyants-MacBook-Air ekantipur-scraper % uv run python scraper.py Launching browser ... →
+ Navigating to Entertainment section ...   [warn] Timed out waiting for: article.news-card  
+  [warn] Timed out waiting for: .top-news article   [warn] Timed out waiting for: .trending-news article 
+    [warn] Timed out waiting for: .list-news article   [warn] Timed out waiting for: div.news-listing article  
+     [warn] Timed out waiting for: div[class*='news'] article   [warn] Timed out waiting for: .col-md-4 article,
+      .col-sm-6 article   [warn] Timed out waiting for: article   [ok] Extracted 0 entertainment articles → Looking 
+      for Cartoon of the Day ...   [ok] Cartoon found at: __https://ekantipur.com/cartoon__ ✓ Data saved to output.json 
+        Entertainment articles : 0   Cartoon title          : गजब छ बा (base) dikshyantdon@Dikshyants-MacBook-Air 
+        ekantipur-scraper %'
+
+All my selectors are timing out — the site uses div elements, not article tags. Help me fix this.' 
+It suggested a new approach, I tested it, and then refined it based on what actually worked
+
+#-------------2--------
+The cartoon works! The entertainment section is timing out because ekantipur.com 
+likely blocks headless browsers or uses different selectors.fix this by inspecting 
+the actual page structure.Edited a file, viewed a fileEdited a file, viewed a file
